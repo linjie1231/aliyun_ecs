@@ -1,0 +1,31 @@
+制定阿里云安全基线
+	1. 以CIS阿里云Benchmark和MLPS 2.0合规标准为基准
+	2. 根据风险严重级别，制定高风险、中风险等级的安全规则
+	3. 定义基线检查规则权重、评分点数，设计评分公式
+	4. 开发基线检查工具并验证检查结果和评分
+	5. 在 NSC 阿里云中执行基线检查和评分
+	
+
+实施云安全评估
+	1. 基于BMW WI、云服务提供商建议以及CIS/MLPS云安全基线定义评估规则。
+	2. 通过采访相关团队，评估NSC AWS/Azure/阿里云的安全状况。
+	3. 根据云安全评估结果，分析云安全能力薄弱环节。
+	4. 提供解决方案，提升云安全能力。
+
+
+VM操作系统安全加固（Golden Image)
+	1. 基于CIS Benchmark和MLPS标准，为Linux和Windows操作系统定义安全加固项，确保符合各项安全标准。
+	2. 开发Ubuntu/SUSE/Amazon Linux/Alibaba Cloud Linux/Windows Server各版本基于Ansible 的自动化加固脚本
+	3. 构建NSC AWS/Azure/阿里云的Golden Image镜像池，用于新应用程序的VM创建；
+	4. 对现有NSC AWS/Azure/阿里云应用未使用Golden Image的VM进行脚本加固
+	5. 完成NSC AWS/Azure/阿里云所选VM的全部系统加固工作。
+
+
+IaC代码安全检查 
+	1. 基于BMW Best Practices - Building Block Evaluation、AWS最佳实践、Microsoft Defender for Cloud建议、Aliyun最佳实践中定义的安全控制，定义China Building Block IaC 代码安全检查标准；
+	2. 通过 Checkov 和 Tfsec Iac代码检查工具和手动检查方式，对AWS/Azure/阿里云开发的IaC Building Blouc进行安全评估；
+	3. 通过安全评估结果提供相应修复建议，提升IaC代码安全性。
+
+容器安全POC
+	1. 青腾容器安全POC测试基于容器安全零信任框架，在容器开发、构建、部署、运行四个阶段，对容器安全涉及的8大类66个子项安全控制点进行测试
+	2. 测试结果与Wiz、云原生容器安全功能进行对比，分析各工具优劣势，为NSC后续的容器安全能力建设提供依据。
