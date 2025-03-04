@@ -29,3 +29,14 @@ IaC代码安全检查
 容器安全POC
 	1. 青腾容器安全POC测试基于容器安全零信任框架，在容器开发、构建、部署、运行四个阶段，对容器安全涉及的8大类66个子项安全控制点进行测试
 	2. 测试结果与Wiz、云原生容器安全功能进行对比，分析各工具优劣势，为NSC后续的容器安全能力建设提供依据。
+
+
+• 制定云上安全标准，提供相应解决方案
+	• 基于CIS Benchmakr和MLPS安全要求，制作操作系统Golden Image安全加固镜像；
+	• 基于OWASP CSVS、NIST Container Security Standard、CIS Benchmarks标准，提供容器安全解决方案；
+	• 基于AWS Best Practices、Microsoft Defender for Cloud Recommendations、Aliyun Best Practices标准，制作IaC代码安全检查；
+• 根据CIS、NIST、CSA对公有云安全提出的安全控制要求及云厂商AWS/Azure/Aliuun 最佳实践，制定云安全架构，涵盖4个安全控制域：
+	• Layer1: Network and Infrastructure
+	• Layer2: Cryptography
+	• Layer3: Operations
+          Layer4: Authentication, authorization and identity management
